@@ -68,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.quizapp :
-                        Toast.makeText(getApplicationContext(),"Retur is Clicked",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"QUIZ app is Opening",Toast.LENGTH_LONG).show();
+                        Intent intent1= new Intent(MainActivity.this, quizapp.class);
+                        startActivity(intent1);
                         //drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                 }

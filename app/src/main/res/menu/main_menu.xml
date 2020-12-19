@@ -7,10 +7,10 @@
             android:id="@+id/calculator"
             android:icon="@drawable/calculator"
             android:title="@string/calculator" />
-
         <item
             android:id="@+id/quizapp"
             android:icon="@drawable/quizapp"
             android:title="@string/quiz_app" />
+
     </group>
 </menu>
