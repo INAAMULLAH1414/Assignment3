@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId())
                 {
                     case R.id.calculator :
-                        Toast.makeText(getApplicationContext(),"Retur is Clicked",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"Application's Opening",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(MainActivity.this, calculator.class);
                         startActivity(intent);
                         //drawerLayout.closeDrawer(GravityCompat.START);
@@ -76,9 +76,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-
-
 
     }
 
