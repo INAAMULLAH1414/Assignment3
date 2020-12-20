@@ -77,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent1);
                         //drawerLayout.closeDrawer(GravityCompat.START);
                         break;
+                    case R.id.about:
+                        Toast.makeText(getApplicationContext(),"about",Toast.LENGTH_LONG).show();
+                        Intent intent2= new Intent(MainActivity.this, about.class);
+                        startActivity(intent2);
                 }
 
                 return true;
