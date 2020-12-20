@@ -60,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
             {
                 switch (menuItem.getItemId())
                 {
+                    case R.id.home :
+                        Toast.makeText(getApplicationContext(),"Home",Toast.LENGTH_LONG).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                       break;
                     case R.id.calculator :
                         Toast.makeText(getApplicationContext(),"Application's Opening",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(MainActivity.this, calculator.class);

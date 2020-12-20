@@ -22,8 +22,6 @@ public class quizactivity extends AppCompatActivity {
     RadioButton rb1,rb2,rb3,rb4;
     CountDownTimer countDownTimer;
 
-
-
     String []questions = {
             "Bluetooth Technology supports",
             "In Bluetooth which of the following device decides the hopping sequence?",
@@ -34,7 +32,7 @@ public class quizactivity extends AppCompatActivity {
             "Cellular System or having small cells needs ——–",
             "Which of the following provides packet mode data transfer service over the cellular network system?",
             "Which of the following services/ services are defined by the GSM?",
-            "HOW many Gods in islam"
+            "Which of the following can be true?"
     };
     public static int CopyArray (String []arr1, String []arr2)
     {
@@ -76,7 +74,7 @@ public class quizactivity extends AppCompatActivity {
                     "Handover","Infrastructure","Frequency planning","All of the above",
                     "GSM","GPRS","TCP","none",
                     "Bearer","Tele","Supplementary","All of the above",
-                    "Only one","Two","Three","NONE"
+                    "CSM","PDM","Both","NONE"
             };
 
     //String opt1[] =Randomize(opt);
@@ -181,7 +179,6 @@ public class quizactivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),resultrecord_activity.class);
-
                 startActivity(intent);
             }
         });
@@ -209,7 +206,7 @@ public class quizactivity extends AppCompatActivity {
                     marks=correct;
                     Intent in = new Intent(getApplicationContext(),resultrecord_activity.class);
                     countDownTimer=null;
-                    startActivity(in);
+                   //startActivity(in);
                 }
                 Intent intent=new Intent(getApplicationContext(),resultrecord_activity.class);
                 countDownTimer=null;
